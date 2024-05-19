@@ -6,9 +6,7 @@
 
 <template>
   <div>
-    <VideoBg/>
-    <NuxtLayout>
-      <NuxtPage />
-    </NuxtLayout>
+    <Navbar />
+    <NuxtPage />
   </div>
 </template>
