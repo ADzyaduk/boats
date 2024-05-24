@@ -1,13 +1,18 @@
 <template>
     <div>
-
+      <ServicesSlider />
+      <ContactsFormHome />
+      <Reviews />
     </div>
-</template>
-
-<script setup lang="ts">
-
-</script>
-
-<style scoped>
-
-</style>
+  </template>
+  
+  <script setup>
+//   import ServicesSlider from '@/components/ServicesSlider.vue'
+//   import ContactFormHome from '@/components/ContactFormHome.vue'
+//   import Reviews from '@/components/Reviews.vue'
+  </script>
+  
+  <style scoped>
+  /* Добавьте стили при необходимости */
+  </style>
+  

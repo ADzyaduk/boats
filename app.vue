@@ -1,13 +1,10 @@
-<script setup lang="ts">
-// layouts/custom.vue
+<template>
+  <NuxtLayout />
+</template>
 
+<script setup>
 </script>
 
-
-<template>
-  <div>
-    <AppNavbar />
-    <NuxtPage />
-    <AppFooter/>
-  </div>
-</template>
+<style scoped>
+/* Добавьте стили при необходимости */
+</style>

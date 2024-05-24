@@ -1,13 +1,12 @@
 <template>
-    <div>
-
-    </div>
-</template>
-
-<script setup lang="ts">
-
-</script>
-
-<style scoped>
-
-</style>
+    <AboutPage />
+  </template>
+  
+  <script setup>
+//   import AboutPage from '@/components/AboutPage.vue'
+  </script>
+  
+  <style scoped>
+  /* Добавьте стили при необходимости */
+  </style>
+  

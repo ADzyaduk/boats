@@ -25,17 +25,17 @@
     {
       name: 'Fishing',
       description: 'Experience an amazing fishing adventure.',
-      image: 'path-to-fishing-image.jpg',
+      // image: 'path-to-fishing-image.jpg',
     },
     {
       name: 'Catering',
       description: 'Delicious catering services for your trips.',
-      image: 'path-to-catering-image.jpg',
+      // image: 'path-to-catering-image.jpg',
     },
     {
       name: 'Yacht Rental',
       description: 'Rent a yacht for your private events.',
-      image: 'path-to-yacht-rental-image.jpg',
+      // image: 'path-to-yacht-rental-image.jpg',
     },
   ];
   </script>
