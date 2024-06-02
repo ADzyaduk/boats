@@ -3,13 +3,9 @@
         <!-- Video Background -->
         <video-background src="./720.mp4" poster="#" :sources="[
             { src: './720.mp4', res: 900, autoplay: true },
-            { src: 'path/to/mobile-video.mp4', res: 638, autoplay: true, poster: 'path/to/mobile-background-image.png' }
+            { src: './720.mp4', res: 638, autoplay: true, poster: '#' }
         ]" style="max-height: 400px; height: 100vh;" overlay="linear-gradient(45deg,#2a4ae430,#fb949e6b)">
-
         </video-background>
-
-        <!-- Navbar -->
-
 
         <!-- Welcome Message -->
         <div class="absolute inset-0 flex justify-center items-center">

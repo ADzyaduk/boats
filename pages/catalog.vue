@@ -1,11 +1,10 @@
 <template>
-    <div>
+    <UContainer class="mt-24">
         <ProductPage />
-    </div>
+    </UContainer>
+
 </template>
 
-<script setup lang="ts">
-
+<script setup>
+import ProductPage from '~/components/ProductPage.vue';
 </script>
-
-<style scoped></style>

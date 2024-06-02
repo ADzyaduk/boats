@@ -26,6 +26,9 @@ onMounted(() => {
 <template>
   <UCarousel ref="carouselRef" v-slot="{ item }" :items="items" :ui="{ item: 'basis-full' }"
     class="rounded-lg overflow-hidden" indicators>
-    <img :src="item" class="w-full" draggable="false">
+    <UContainer class="h-96">
+      <img :src="item" class="w-full" draggable="false">
+    </UContainer>
+
   </UCarousel>
 </template>

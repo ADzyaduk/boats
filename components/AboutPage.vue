@@ -1,26 +1,30 @@
 <template>
-    <div class="max-w-3xl mx-auto p-6 bg-white shadow-md rounded-lg">
-      <h1 class="text-2xl font-semibold mb-4">About Us</h1>
+  <UContainer>
+    <div class="mt-4 mx-auto p-6 bg-white shadow-md rounded-lg">
+      <h1 class="text-center text-2xl font-semibold mb-4">О нас</h1>
       <p class="mb-4">
-        Welcome to our yacht rental service. We offer a variety of services to ensure you have an unforgettable experience on the water. Whether you are looking for a relaxing day with family and friends, a thrilling fishing adventure, or a luxurious catering service, we have something for everyone.
+        Добро пожаловать в наш сервис аренды яхт. Мы предлагаем разнообразные услуги, чтобы обеспечить вам незабываемые
+        впечатления на воде. Независимо от того, ищете ли вы спокойный день с семьей и друзьями, захватывающее
+        рыболовное приключение или роскошный кейтеринг, у нас найдется что-то для каждого.
       </p>
-      <h2 class="text-xl font-semibold mb-4">Our Services</h2>
+      <h2 class="text-xl font-semibold mb-4">Наши услуги</h2>
       <ul class="list-disc pl-5 mb-4">
-        <li>Group Tours: Enjoy a group tour on our luxurious yachts.</li>
-        <li>Fishing: Experience an amazing fishing adventure.</li>
-        <li>Catering: Delicious catering services for your trips.</li>
-        <li>Yacht Rental: Rent a yacht for your private events.</li>
+        <li>Групповые туры: Наслаждайтесь групповым туром на наших роскошных яхтах.</li>
+        <li>Рыбалка: Испытайте незабываемое рыболовное приключение.</li>
+        <li>Кейтеринг: Вкусные кейтеринг услуги для ваших поездок.</li>
+        <li>Аренда яхт: Арендуйте яхту для ваших частных мероприятий.</li>
       </ul>
       <p class="mb-4">
-        Our team is dedicated to providing you with the best service possible. We look forward to helping you create wonderful memories on the water.
+        Наша команда стремится предоставить вам наилучший сервис. Мы с нетерпением ждем возможности помочь вам создать
+        замечательные воспоминания на воде.
       </p>
     </div>
-  </template>
-  
-  <script setup>
-  </script>
-  
-  <style scoped>
-  /* Добавьте стили при необходимости */
-  </style>
-  
+  </UContainer>
+</template>
+
+<script setup>
+</script>
+
+<style scoped>
+/* Добавьте стили при необходимости */
+</style>

@@ -1,18 +1,18 @@
 <template>
-    <div class="category-section">
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-3">
-            <ProductCard v-for="product in products" :key="product.id" :product="product" />
-        </div>
+    <div class="category-list mb-8">
+        <ul class="flex flex-wrap">
+            <li v-for="category in categories" :key="category.id" class="mr-4 mb-2">
+                <nuxt-link :to="`/catalog/${category.slug}`" class="text-blue-500 hover:underline">{{ category.name
+                    }}</nuxt-link>
+            </li>
+        </ul>
     </div>
 </template>
 
 <script setup>
-import ProductCard from './ProductCard.vue';
+import { useProductsStore } from '~/store/products';
+import { storeToRefs } from 'pinia';
 
-defineProps({
-    products: {
-        type: Array,
-        required: true
-    }
-});
+const productsStore = useProductsStore();
+const { categories } = storeToRefs(productsStore);
 </script>

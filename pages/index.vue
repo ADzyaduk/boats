@@ -1,7 +1,7 @@
 <template>
   <div>
-    <ServicesSlider />
-    <ContactsFormHome />
+    <Header />
+    <PopularYachts />
   </div>
 </template>
 
