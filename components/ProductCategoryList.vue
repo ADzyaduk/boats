@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
     <div class="category-list mb-8">
         <ul class="flex flex-wrap">
             <li v-for="category in categories" :key="category.id" class="mr-4 mb-2">
@@ -15,4 +15,4 @@ import { storeToRefs } from 'pinia';
 
 const productsStore = useProductsStore();
 const { categories } = storeToRefs(productsStore);
-</script>
+</script> -->

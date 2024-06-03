@@ -13,6 +13,7 @@ export const useProductsStore = defineStore('products', {
         id: 1,
         name: 'Vegas',
         description: 'Описание элитной яхты 1',
+        people: '11',
         price: '10000₽',
         images: {
           preview: '/boats/vegas/1.jpg',
@@ -21,11 +22,12 @@ export const useProductsStore = defineStore('products', {
             '/boats/vegas/3.jpg'
           ]
         },
-        category: 'boats'
+        category: 'boats',
+        isFavorite: true
       },
       {
         id: 2,
-        name: 'vella de plato',
+        name: 'Vella de Plato',
         description: 'Описание элитной яхты 2',
         price: '$15,000,000',
         images: {
@@ -37,13 +39,11 @@ export const useProductsStore = defineStore('products', {
             '/boats/velladeplato/7.jpg'
           ]
         },
-        category: 'elite'
+        category: 'elite',
+        isFavorite: true
       },
-      // Добавьте больше продуктов здесь
-    ],
-    popularProducts: [
       {
-        id: 1,
+        id: 3,
         name: 'Lina',
         description: 'Описание популярной яхты 1',
         price: '$12,000,000',
@@ -53,28 +53,20 @@ export const useProductsStore = defineStore('products', {
             '/boats/lina/2.jpg',
             '/boats/lina/3.jpg'
           ]
-        }
+        },
+        category: 'elite',
+        isFavorite: true
       },
-      {
-        id: 2,
-        name: 'vegas',
-        description: 'Описание популярной яхты 2',
-        price: '$18,000,000',
-        images: {
-            preview: '/boats/vegas/1.jpg',
-            others: [
-              '/boats/vegas/2.jpg',
-              '/boats/vegas/3.jpg'
-          ]
-        }
-      },
-      // Добавьте больше популярных продуктов здесь
+      // Добавьте больше продуктов здесь
     ],
   }),
   getters: {
     getProductsByCategory: (state) => (category) => {
       if (!category) return state.products;
       return state.products.filter(product => product.category === category);
+    },
+    getFavoriteProducts: (state) => {
+      return state.products.filter(product => product.isFavorite);
     },
   },
 });

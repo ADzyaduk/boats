@@ -1,6 +1,7 @@
 <template>
   <div class=" shadow-top my-2 mt-8">
     <UContainer class="w-full">
+      <ColorBtn />
       <div class="flex justify-center items-center space-x-4 md:hidden">
         <NuxtLink to="/" class="text-white hover:bg-primary hover:text-white px-3 py-2 rounded-md text-sm font-medium">
           Главная
