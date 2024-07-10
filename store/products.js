@@ -15,13 +15,11 @@ export const useProductsStore = defineStore('products', {
         description: 'Описание элитной яхты 1',
         people: '11',
         price: '10000₽',
-        images: {
-          preview: '/boats/vegas/1.jpg',
-          others: [
-            '/boats/vegas/2.jpg',
-            '/boats/vegas/3.jpg'
-          ]
-        },
+        images: [
+          '/boats/vegas/1.jpg',
+          '/boats/vegas/2.jpg',
+          '/boats/vegas/3.jpg'
+        ],
         category: 'boats',
         isFavorite: true
       },
@@ -30,15 +28,13 @@ export const useProductsStore = defineStore('products', {
         name: 'Vella de Plato',
         description: 'Описание элитной яхты 2',
         price: '$15,000,000',
-        images: {
-          preview: '/boats/velladeplato/1.jpg',
-          others: [
-            '/boats/velladeplato/2.jpg',
-            '/boats/velladeplato/3.jpg',
-            '/boats/velladeplato/6.jpg',
-            '/boats/velladeplato/7.jpg'
-          ]
-        },
+        images: [
+          '/boats/velladeplato/1.jpg',
+          '/boats/velladeplato/2.jpg',
+          '/boats/velladeplato/3.jpg',
+          '/boats/velladeplato/6.jpg',
+          '/boats/velladeplato/7.jpg'
+        ],
         category: 'elite',
         isFavorite: true
       },
@@ -47,13 +43,11 @@ export const useProductsStore = defineStore('products', {
         name: 'Lina',
         description: 'Описание популярной яхты 1',
         price: '$12,000,000',
-        images: {
-          preview: '/boats/lina/1.jpg',
-          others: [
-            '/boats/lina/2.jpg',
-            '/boats/lina/3.jpg'
-          ]
-        },
+        images: [
+          '/boats/lina/1.jpg',
+          '/boats/lina/2.jpg',
+          '/boats/lina/3.jpg'
+        ],
         category: 'elite',
         isFavorite: true
       },
@@ -67,6 +61,14 @@ export const useProductsStore = defineStore('products', {
     },
     getFavoriteProducts: (state) => {
       return state.products.filter(product => product.isFavorite);
+    },
+    getProductImages: (state) => (productId) => {
+      const product = state.products.find(product => product.id === productId);
+      return product ? product.images : [];
+    },
+    getProductPreviewImage: (state) => (productId) => {
+      const product = state.products.find(product => product.id === productId);
+      return product ? product.images[0] : '';
     },
   },
 });
